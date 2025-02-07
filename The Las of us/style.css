@@ -9,7 +9,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 img{
@@ -28,7 +28,7 @@ header{
     background-color: black;
     justify-content: space-around;
     width: 100%;
-    height: 10vh;
+    height: 14vh;
     padding: 1%;
     border-bottom: 3px solid #8b0000;
 }
@@ -69,4 +69,5 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center center;
 }
