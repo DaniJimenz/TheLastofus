@@ -1,0 +1,72 @@
+
+@font-face {
+    font-family: 'Press Gothic';
+    src: url(./Fonts/The\ Last\ Of\ Us\ Rough.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    font-family: 'Press Gothic';
+}
+
+/*Header*/
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: space-around;
+    width: 100%;
+    height: 10vh;
+    padding: 1%;
+    border-bottom: 3px solid #8b0000;
+}
+.luz{
+    width: 4%;
+}
+.logo img{
+    height: 128px;
+    width: auto;
+}
+
+nav{
+    width: 50%;
+}
+
+nav ul{
+    justify-content: space-around;
+    list-style: none;
+    display: flex;
+    font-size: 30px;
+}
+
+nav a{
+    color: #eaeaea;
+    text-decoration: none;
+    font-weight: normal;  /*Grosor de un texto*/
+}
+nav a:hover{
+    color: #8b0000;
+}
+
+/*Main*/
+
+#banner{
+    background-image: url(./IMG/Wall2.png);
+    height: 80vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
