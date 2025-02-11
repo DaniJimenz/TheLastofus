@@ -204,19 +204,40 @@ footer{
     font-family: 'Oswald';
 }
 
-#fases4{
+.fases4{
     display: flex;
     flex-direction: column;
 }
 
-#fases4 h3{
+.fases4 h3{
     font-size: 1.5em;
     color: #eaeaea;
     font-family: 'Oswald';
 }
 
-#fases4 p{
+.fases4 p{
     font-size: 1em;
     line-height: 1.4;
     color: #eaeaea;
+}
+
+.fases8{
+    display: flex;
+    flex-direction: column;
+}
+
+.fases8 h3{
+    font-size: 1.5em;
+    color: #eaeaea;
+    font-family: 'Oswald';
+}
+
+.fases8 p{
+    font-size: 1em;
+    line-height: 1.4;
+    color: #eaeaea;
+}
+
+.todo{
+    flex-wrap: wrap;
 }
