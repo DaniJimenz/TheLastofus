@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 @font-face {
     font-family: 'Press Gothic';
@@ -5,6 +6,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 
 *{
     padding: 0;
@@ -135,23 +137,30 @@ footer{
     margin:0;
 }
 
-/*Personajes*/
+/*Personajes Principales*/
 
 #personajes h1{
-    text-align: center;
     color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family: 'Oswald';
+    
 }
-
 #personajes{
     background-color: black;
     padding: 50px 20px;
 }
 
-.container{
+.conteiner{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
 
+.conteiner > div{
+    width: 30vw;
 }
 
 #personajes .img{
@@ -170,9 +179,44 @@ footer{
     margin: 15px 0 10px;
     font-size: 1.5em;
     color: #eaeaea;
+    font-family: 'Oswald';
 }
 
 #personajes p{
+    font-size: 1em;
+    line-height: 1.4;
+    color: #eaeaea;
+}
+
+
+/*Infectados*/
+
+#infectados{
+    background-color: black;
+}
+
+#infectados h1{
+    color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family: 'Oswald';
+}
+
+#fases4{
+    display: flex;
+    flex-direction: column;
+}
+
+#fases4 h3{
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+    color: #eaeaea;
+    font-family: 'Oswald';
+}
+
+#fases4 p{
     font-size: 1em;
     line-height: 1.4;
     color: #eaeaea;
