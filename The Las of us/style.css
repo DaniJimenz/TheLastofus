@@ -94,6 +94,7 @@ footer{
     padding: 40px 20px;
     font-family: 'Press Gothic';
     text-align: center;
+    border-top: 3px solid #8b0000;
 }
 .contenidofooter{
     max-width: 800px;
@@ -147,6 +148,7 @@ footer{
     font-size: 30px;
     font-family: 'Oswald';
     background-color: grey;
+    border-radius: 5px;
     
 }
 #personajes{
@@ -167,7 +169,7 @@ footer{
 #personajes .img{
     border-radius: 10px;
     border: 3px solid grey;
-    width: 27vw; 
+    width: 100%; 
 }
 
 #personajes .img:hover{
@@ -215,7 +217,7 @@ footer{
 .div6 { grid-area: 2 / 3 / 3 / 4; }
 
 .fases>div{
-    height: 65vh;
+    height: 24vw;
     background-color: #2d572c;
     border-radius: 10px;
     border: 3px solid #2d572c;
@@ -227,6 +229,7 @@ footer{
     text-align: center;
     padding: 10px;
     background-color: #2d572c;
+    border-radius: 5px;
 }
 
 .fases h3{
@@ -237,7 +240,35 @@ footer{
 .fases p{
     text-align: center;
     font-family: 'Oswald';
+    border-radius: 5px;
+    background-color: black;
 }
 
+.fases img{
+    border-radius: 5px;
+    height: 15vw;
+}
 
+.audio{
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
 
+/*Secundarios*/
+
+#secundarios h2{
+    color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family: 'Oswald';
+    background-color: grey;
+    border-radius: 5px;
+}
+
+#secundarios{
+    padding: 50px 20px;
+    background-color: black;
+}
