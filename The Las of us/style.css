@@ -264,11 +264,143 @@ footer{
     margin-bottom: 40px;
     font-size: 30px;
     font-family: 'Oswald';
-    background-color: grey;
+    background-color:#A52A2A;
     border-radius: 5px;
 }
 
 #secundarios{
     padding: 50px 20px;
     background-color: black;
+}
+
+/*Historia*/
+
+#historia{
+    background-color: black;
+    padding: 50px 40px;
+    font-family: 'Oswald';
+}
+
+#historia h1{
+    color: grey;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#historia h2{
+    color: grey;
+}
+
+#historia p{
+    color: #eaeaea;
+}
+
+#historia a{
+    color:#8b0000;
+}
+
+#capitulos{
+    background-color: black;
+    font-family:'Oswald';
+    color: #eaeaea;
+    padding: 50px 40px;
+}
+#capitulos h2{
+    margin-bottom: 15px;
+    color: grey;
+}
+#capitulos h3{
+    color: grey;
+    margin-right: 1vw;
+}
+.caps1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#capitulos img{
+    border-radius: 10px;
+    transition: 1s;
+    border: 2px solid grey;
+}
+#capitulos img:hover{
+    transform: scale(0.9);
+}
+
+.caps1>div{
+    width: 24%;
+    
+}
+
+.caps2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.caps2>div{
+    width: 24%;
+}
+
+.caps3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.caps3>div{
+    width: 24%;
+}
+
+.o{
+    color:#804000;
+}
+.v{
+    color:#ff9f1a;
+}
+.i{
+    color:#b3cfe6;
+}
+.p{
+    color:#e1cc4f; 
+}
+
+.caps1>div>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.caps2>div>:nth-child(1){
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.caps3>div>:nth-child(1){
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+#historia2{
+    background-color: black;
+    padding: 50px 40px;
+    font-family: 'Oswald';
+}
+
+#historia2 h2{
+    color: grey;
+}
+
+#historia2 p{
+    color: #eaeaea;
+}
+
+#historia2 a{
+    color:#8b0000;
 }
