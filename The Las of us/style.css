@@ -217,6 +217,7 @@ footer{
 .div6 { grid-area: 2 / 3 / 3 / 4; }
 
 .fases>div{
+    width: 24%;
     height: 24vw;
     background-color: #2d572c;
     border-radius: 10px;
