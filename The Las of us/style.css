@@ -20,6 +20,7 @@ img{
 
 body{
     font-family: 'Press Gothic';
+    background-color: black;
 }
 
 /*Header*/
@@ -217,7 +218,6 @@ footer{
 .div6 { grid-area: 2 / 3 / 3 / 4; }
 
 .fases>div{
-    width: 24%;
     height: 24vw;
     background-color: #2d572c;
     border-radius: 10px;
@@ -404,4 +404,33 @@ footer{
 
 #historia2 a{
     color:#8b0000;
+}
+
+/*Análisis*/
+
+#analisis{
+   width: 70%;
+   margin: auto;
+   background-color: black;
+   margin-top: 40px;
+   font-family: 'Oswald';
+   color: #eaeaea;
+}
+
+h1{
+    color: grey;
+}
+h2{
+    color: grey;
+}
+
+#analisis>div{
+    padding: 30px;
+}
+
+.viaje>div:nth-child(3){
+    width: 90%;
+    margin: auto;
+    margin-top: 30px ;
+    margin-bottom: 30px;
 }
