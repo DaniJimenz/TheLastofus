@@ -30,7 +30,8 @@ header{
     align-items: center;
     background-color: black;
     justify-content: space-around;
-    width: 100%;
+    width: 70%;
+    margin: auto;
     height: 14vh;
     padding: 1%;
     border-bottom: 3px solid #8b0000;
@@ -72,6 +73,8 @@ nav a:hover{
     display: flex;
     align-items: center;
     background-position: center center;
+    width: 70%;
+    margin: auto;
 }
 
 #banner h1{
@@ -87,6 +90,55 @@ nav a:hover{
     justify-content: flex-start;
 }
 
+/*Inicio*/
+
+#carrusel{
+    width: 70%;
+    margin: auto;
+    height: 65vh;
+}
+
+.slider input{
+    visibility: hidden;
+    display: none;
+}
+
+.contenido{
+    width: 300vw;
+    display: flex;
+    transition: 400ms ease-in-out;
+}
+
+.primero,.segundo,.tercero{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    bottom: 50px;
+    gap: 10px;
+}
+
+.button label{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    opacity: 0.5;
+    z-index: 1;
+    transition: 300ms ease-in-out;
+}
+
+.button label:hover{
+    scale: 1.2;
+    opacity: 1;
+}
+
+
+
 /*Footer*/
 
 footer{
@@ -96,6 +148,8 @@ footer{
     font-family: 'Press Gothic';
     text-align: center;
     border-top: 3px solid #8b0000;
+    width: 70%;
+    margin: auto;
 }
 .contenidofooter{
     max-width: 800px;
@@ -155,6 +209,8 @@ footer{
 #personajes{
     background-color: black;
     padding: 50px 20px;
+    width: 70%;
+    margin: auto;
 }
 
 .conteiner{
@@ -164,7 +220,7 @@ footer{
 }
 
 .conteiner > div{
-    width: 30vw;
+    width: 18vw;
 }
 
 #personajes .img{
@@ -198,6 +254,8 @@ footer{
     background-color: black;
     color: #eaeaea;
     padding: 50px 20px;
+    margin: auto;
+    width: 70%;
 }
 
 .fases {
@@ -218,7 +276,7 @@ footer{
 .div6 { grid-area: 2 / 3 / 3 / 4; }
 
 .fases>div{
-    height: 24vw;
+    height: 23vw;
     background-color: #2d572c;
     border-radius: 10px;
     border: 3px solid #2d572c;
@@ -272,6 +330,19 @@ footer{
 #secundarios{
     padding: 50px 20px;
     background-color: black;
+    width: 70%;
+    margin: auto;
+    color: #eaeaea;
+    font-family: 'Oswald';
+}
+
+.secun>div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.secun>div>div{
+    width: 24%;
 }
 
 /*Historia*/
@@ -280,6 +351,8 @@ footer{
     background-color: black;
     padding: 50px 40px;
     font-family: 'Oswald';
+    width: 70%;
+    margin: auto;
 }
 
 #historia h1{
@@ -305,6 +378,8 @@ footer{
     font-family:'Oswald';
     color: #eaeaea;
     padding: 50px 40px;
+    margin: auto;
+    width: 70%;
 }
 #capitulos h2{
     margin-bottom: 15px;
@@ -392,6 +467,8 @@ footer{
     background-color: black;
     padding: 50px 40px;
     font-family: 'Oswald';
+    margin: auto;
+    width: 70%;
 }
 
 #historia2 h2{
@@ -444,11 +521,32 @@ h2{
     margin-bottom: 30px;
 }
 
-.viaje>div:nth-child(){
+.viaje2>div:nth-child(3){
     display: flex;
     justify-content: center;
-    width: 50%;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+.viaje3>div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.viaje4>div:nth-child(3){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.viaje4>div:nth-child(3)>div{
+    width: 49%;
+}
+
