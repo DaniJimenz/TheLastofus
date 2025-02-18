@@ -90,55 +90,6 @@ nav a:hover{
     justify-content: flex-start;
 }
 
-/*Inicio*/
-
-#carrusel{
-    width: 70%;
-    margin: auto;
-    height: 65vh;
-}
-
-.slider input{
-    visibility: hidden;
-    display: none;
-}
-
-.contenido{
-    width: 300vw;
-    display: flex;
-    transition: 400ms ease-in-out;
-}
-
-.primero,.segundo,.tercero{
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button{
-    display: flex;
-    justify-content: center;
-    bottom: 50px;
-    gap: 10px;
-}
-
-.button label{
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    opacity: 0.5;
-    z-index: 1;
-    transition: 300ms ease-in-out;
-}
-
-.button label:hover{
-    scale: 1.2;
-    opacity: 1;
-}
-
-
-
 /*Footer*/
 
 footer{
