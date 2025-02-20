@@ -550,6 +550,21 @@ h2{
     width: 49%;
 }
 
+/*HBO*/
+
+#hbo{
+    width: 80%;
+    margin: auto;
+    background-color: black;
+    margin-top: 40px;
+    font-family: 'Oswald';
+    color: #eaeaea;
+}
+ 
+h1{
+    color: grey;
+}
+
 /*Noticias*/
 
 #noticias{
