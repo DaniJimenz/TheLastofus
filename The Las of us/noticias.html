@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>PERSONAJES</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+        $('.nav__toggle').on('click', function() {
+            $('.nav').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu__item').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu').toggleClass('escon');
+        });
+        });
+    </script>
+</head>
+<body>
+<header>
+    <nav class="nav">
+        <div class="nav__logo"><a href="#"><img src="./IMG/Loguito.jfif" alt=""></a></div>
+        <span class="nav__toggle">
+            <span class="menu-activador-linea"></span>
+            <span class="menu-activador-linea"></span>
+            <span class="menu-activador-linea"></span>
+        </span>
+        <ul class="menu escon">
+          <li class="menu__item">
+            <a href="./inicio.html">INICIO</a>
+          </li>
+          <li class="menu__item">
+            <a href="./historia.html">HISTORIA</a>
+          </li>
+          <li class="menu__item">
+            <a href="./personajes.html">PERSONAJES</a>
+          </li>
+          <li class="menu__item">
+            <a href="./noticias.html">NOTICIAS</a>
+          </li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section id="noticias">
+            <article class="tarjeta">
+                <div class="tarjetaimg">
+                  <img src="./IMG/hbo.jpg" 
+                       alt="Poster de The Last of Us">
+                  <span class="tag">NOTICIAS</span>
+                </div>
+                <div class="tarjetaconte">
+                  <h2>Fecha de estreno de la segunda temporada</h2>
+                  <p>
+                    La segunda temporada de la galardonada serie THE LAST OF US llegará
+                    pronto. Los primeros seis episodios de la serie de HBO ganadora de un 
+                    Emmy® estarán disponibles en Max/HBO. Mientras, 
+                    los fans pueden disfrutar de la historia.
+                  </p>
+                  <a href="./hbo.html">Leer más</a>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <div class="tarjetaimg">
+                  <img src="./IMG/remas2.avif" 
+                       alt="Poster de The Last of Us para PC">
+                  <span class="tag">NOTICIAS</span>
+                </div>
+                <div class="tarjetaconte">
+                  <h2>Ya en reserva para PC The Last of Us Parte II Remastered</h2>
+                  <p>
+                    A partir del 3 de abril podrás disfrutar de The Last of Us Parte II en PC.
+                    El juego incluye mejoras gráficas y nuevo contenido, manteniendo 
+                    la apasionante historia que cautivó a los fans.
+                  </p>
+                  <a href="./remaster.html">Leer más</a>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <div class="tarjetaimg">
+                  <img src="./IMG/legado.jpg" 
+                       alt="Poster de The Last of Us para PC">
+                  <span class="tag">NOTICIAS</span>
+                </div>
+                <div class="tarjetaconte">
+                  <h2>Sobre el legado que deja The Last of Us</h2>
+                  <p>
+                    Hace un mes que Geoff Kile… Keighl… Que El Doritos anunció en su gala de premios que Naughty Dog tiene una nueva IP; y esto fue un notición, porque desde 2011 que Naughty Dog no anunciaba una nueva IP. Ha habido muchos juegos nuevos (y muchos remasteres y remakes) pero desde hacía 13 años que
+                  </p>
+                  <a href="#">Leer más</a>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <div class="tarjetaimg">
+                  <img src="./IMG/grabaciones.jpg" 
+                       alt="Poster de The Last of Us para PC">
+                  <span class="tag">NOTICIAS</span>
+                </div>
+                <div class="tarjetaconte">
+                  <h2>Fin de las grabaciones</h2>
+                  <p>
+                    Oficialmente es el fin de las grabaciones de la segunda temporada de la serie de The Last of Us para HBO. Ya veíamos en noticias anteriores como la producción casi al completo de la serie de The Last of Us celebraba el final del proceso de grabaciones en una enorme fiesta. Fiesta de la que
+                  </p>
+                  <a href="#">Leer más</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="contenidofooter">
+            <div class="logofooter">
+                <p>The last of us</p>
+                <p>"Es mas facil perdonar que olvidar"</p>
+            </div>
+            <div class="redes">
+                <p>Nuestras redes!</p>
+                <div>
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                    <a href="https://instagram.com" target="_blank">Youtube</a>
+                </div>
+            </div>
+            <div class="bottomfooter">
+                <p>2025 The last of us Fan Page. Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

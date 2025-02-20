@@ -369,23 +369,7 @@ footer{
     border-radius: 9px;
 }
 
-.caps1>div>div:nth-child(1){
-    display: flex;
-    align-items: center;
-    margin-bottom: 7px;
-}
-
-.caps2>div>:nth-child(1){
-    display: flex;
-    align-items: center;
-    margin-bottom: 7px;
-}
-
-.caps3>div>:nth-child(1){
-    display: flex;
-    align-items: center;
-    margin-bottom: 7px;
-}
+/*Historia2*/
 
 #historia2{
     background-color: black;
@@ -406,6 +390,98 @@ footer{
 #historia2 a{
     color:#8b0000;
 }
+
+#capitulos2{
+    background-color: black;
+    font-family:'Oswald';
+    color: #eaeaea;
+    padding: 50px 40px;
+    margin: auto;
+    width: 80%;
+}
+
+#capitulos2 h2{
+    margin-bottom: 15px;
+    color: grey;
+}
+#capitulos2 h3{
+    color: white;
+    margin-right: 1vw;
+}
+.caps21{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.caps21>div{
+    width: 24%;
+}
+
+.caps22>div{
+    width: 24%;
+}
+
+.caps22{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.caps32>div{
+    width: 24%;
+}
+
+.caps32{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.caps32>div{
+    width: 24%;
+}
+
+#capitulos2 .otoño{
+    border: 2px solid #b96e57;
+    transition: 1s;
+    border-radius: 9px;
+}
+#capitulos2 .verano{
+    border: 2px solid #f9c54e;
+    transition: 1s;
+    border-radius: 9px;
+}
+#capitulos2 .primavera{
+    border: 2px solid #dbde83;
+    transition: 1s;
+    border-radius: 9px;
+}
+#capitulos2 .invierno{
+    border: 2px solid #1a8ca2;
+    transition: 1s;
+    border-radius: 9px;
+}
+
+#capitulos2 .otoño:hover{
+    transform: scale(0.9);
+}
+#capitulos2 .verano:hover{
+    transform: scale(0.9);
+}
+#capitulos2 .primavera:hover{
+    transform: scale(0.9);
+}
+#capitulos2 .invierno:hover{
+    transform: scale(0.9);
+}
+
+
+
+
 
 /*Análisis*/
 
@@ -474,7 +550,76 @@ h2{
     width: 49%;
 }
 
+/*Noticias*/
 
+#noticias{
+    background-color: black;
+    width: 80%;
+    font-family: 'Oswald';
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.tarjeta {
+    background-color: black;
+    border-radius: 8px;
+    overflow: hidden;       
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 49%;
+}  
+
+.tarjetaimg {
+    position: relative; 
+}
+  
+.tarjetaimg img {
+    display: block;
+    height: auto;
+}
+  
+.tag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: grey;
+    color: #fff;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+  
+.tarjetaconte {
+    padding: 1rem;
+    flex: 1; 
+}
+  
+.tarjetaconte h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+  
+.tarjetaconte p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #eaeaea;
+}
+  
+.tarjetaconte a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.tarjetaconte a:hover {
+    text-decoration: underline;
+}
 
 
 
