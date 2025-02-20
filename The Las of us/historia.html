@@ -5,38 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>INICIO</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+        $('.nav__toggle').on('click', function() {
+            $('.nav').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu__item').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu').toggleClass('escon');
+        });
+        });
+    </script>
 </head>
 <body>
-    <header>
-        <div class="logo"><img src="./IMG/Loguito.jfif" alt=""></div>
-        <nav>
-            <ul>
-                <li><a href="./inicio.html">INICIO</a></li>
-                <li><a href="">VIDEOJUEGO</a></li>
-                <li><a href="./personajes.html">PERSONAJES</a></li>
-                <li><a href="./historia.html">HISTORIA</a></li>
-                <li><a href="">SERIE</a></li>
-            </ul>
-        </nav>
-        <div class="luz"><img src="./IMG/luz.jfif" alt=""></div>
+<header>
+    <nav class="nav">
+        <div class="nav__logo"><a href="#"><img src="./IMG/Loguito.jfif" alt=""></a></div>
+        <span class="nav__toggle">
+            <span class="menu-activador-linea"></span>
+            <span class="menu-activador-linea"></span>
+            <span class="menu-activador-linea"></span>
+        </span>
+        <ul class="menu escon">
+          <li class="menu__item">
+            <a href="./inicio.html">INICIO</a>
+          </li>
+          <li class="menu__item">
+            <a href="./historia.html">HISTORIA</a>
+          </li>
+          <li class="menu__item">
+            <a href="./personajes.html">PERSONAJES</a>
+          </li>
+        </ul>
+    </nav>
     </header>
     <main>
         <section id="historia">
-            <h1>THE LAST OS US PARTE 1</h1>
+            <h1>THE LAST OS US PARTE I</h1>
             <h2>SINOPSIS</h2>
             <p>Un brote diezma una nacion, un virus llamado Cordyceps convierte al ser humano en un depredador voraz. Sin cura, sin opciones. 20 anios despues, todo cambia.
 
             Joel, un padre coraje convertido en contrabandista en un territorio controlado por un Ejercito Militar, se encontrará en una situacion anomala, acompañar a una joven a un punto concreto para asi protegerla. Pero todo se tuerce y se embarcaran en el viaje que les cambiara sus vidas,… Para siempre. Joel y Ellie, dos supervivientes unidos irremediablemente. Si quereis leer un Analisis completo del juego, podeis leerlo <a href="./analisis.html">AQUÍ</a>.</p>
         </section>
         <section id="capitulos">
-            <h2>CAPITULOS</h2>
+            <h2>CAPITULOS PARTE I</h2>
             <div class="caps1">
                 <div>
                     <div>
                         <h3>Cap 1: Ciudad Natal</h3>
                         <p class="o">Otoño</p>
                     </div>
-                    <div><img src="./IMG/cap1.webp" alt=""></div>
+                    <div class="otoño"><img src="./IMG/natal.webp" alt=""></div>
                     <p>Todo principio debe constar de un motivo, algo que impulse al viaje, pero aqui, es algo mas que eso.</p>
                 </div>
                 <div>
@@ -44,7 +66,7 @@
                         <h3>Cap 2: La zona de cuarentena</h3>
                         <p class="v">Verano</p>
                     </div>
-                    <div><img src="./IMG/cap2.webp" alt=""></div>
+                    <div class="verano"><img src="./IMG/cuarentena.webp" alt=""></div>
                     <p>20 años despúes, Joel y Tess deben resolver un ajuste de cuentas y una cosa lleva a la otra. Empieza el viaje de sus vidas.</p>  
                 </div>
                 <div>
@@ -52,7 +74,7 @@
                         <h3>Cap 3: Las afueras</h3>
                         <p class="v">Verano</p>
                     </div>
-                    <div><img src="./IMG/cap3.webp" alt=""></div>
+                    <div class="verano"><img src="./IMG/afueras.webp" alt=""></div>
                     <p>¿Creian que seria facil? Un paseo, seguro. Cuando ven que deben llevar algo tan valioso, todo cambia. Para todos.</p>   
                 </div>
                 <div>
@@ -60,7 +82,7 @@
                         <h3>Cap 4: Ciudad de Bill</h3>
                         <p class="v">Verano</p>
                     </div>
-                    <div><img src="./IMG/Cap4.webp" alt=""></div>
+                    <div class="verano"><img src="./IMG/bill.webp" alt=""></div>
                     <p>Primera parada, una ciudad desierta, abandonada, pero lleno de trampas. Bill es el amo y señor, que les ayudará en la cruzada.<p> 
                 </div>
             </div>
@@ -70,7 +92,7 @@
                         <h3>Cap 5: Pittsburgh</h3>
                         <p class="v">Verano</p>
                     </div>
-                    <div><img src="./IMG/Cap5.webp" alt=""></div>
+                    <div class="verano"><img src="./IMG/pittsburgh.webp" alt=""></div>
                     <p>Cuando todo parecia ir bien, unos cazadores haran que visitar una ciudad, sea más divertida que ir a un museo.</p>   
                 </div>
                 <div>
@@ -78,7 +100,7 @@
                         <h3>Cap 6: Los Suburbios</h3>
                         <p class="v">Verano</p>
                     </div>
-                    <div><img src="./IMG/Cap6.webp" alt=""></div>
+                    <div class="verano"><img src="./IMG/suburbios.webp" alt=""></div>
                     <p>La compañia a veces ayuda, pero a veces te puede sorprender. Lo importante es seguir con vida.</p>    
                 </div>
                 <div>
@@ -86,7 +108,7 @@
                         <h3>Cap 7: Presa de Tommy</h3>
                         <p class="o">Otoño</p>
                     </div>
-                    <div><img src="./IMG/Cap7.webp" alt=""></div>
+                    <div class="otoño"><img src="./IMG/presa.webp" alt=""></div>
                     <p>Reencuentros y decisiones dificiles. Cuando ves que realmente tu existencia tiene un propósito, es hora de tomar el mando.</p>    
                 </div>
                 <div>
@@ -94,7 +116,7 @@
                         <h3>Cap 8: La Universidad</h3>
                         <p class="o">Otoño</p>
                     </div>
-                    <div><img src="./IMG/Cap8.webp" alt=""></div>
+                    <div class="otoño"><img src="./IMG/universidad.webp" alt=""></div>
                     <p>La relacion entre Joel y Ellie se hace mas fuerte que nunca, aunque el camino a su final este llegando, aqui hay un antes y un despues.</p>    
                 </div>
             </div>
@@ -104,7 +126,7 @@
                         <h3>Cap 9: Complejo Lakeside</h3>
                         <p class="i">Invierno</p>
                     </div>
-                    <div><img src="./IMG/Cap9.webp" alt=""></div>
+                    <div class="invierno"><img src="./IMG/lakeside.webp" alt=""></div>
                     <p>El invierno hara que Ellie pase una prueba de fuego, no solo para alimentarse, si no para evitar ser alimentada. Mientras ayuda a Joel.</p>   
                 </div>
                 <div>
@@ -112,7 +134,7 @@
                         <h3>Cap 10: Parque de autobuses</h3>
                         <p class="p">Primavera</p>
                     </div>
-                    <div><img src="./IMG/Cap10.webp" alt=""></div>
+                    <div class="primavera"><img src="./IMG/terminalbus.webp" alt=""></div>
                     <p>La calma antes de la tempestad, después de vivir una situacion muy dura, es momento de relajar los miedos, pero sin despistarse.</p>   
                 </div>
                 <div>
@@ -120,7 +142,7 @@
                         <h3>Cap 11: El Laboratorio </h3>
                         <p class="p">Primavera</p>
                     </div>
-                    <div><img src="./IMG/cap11.webp" alt=""></div>
+                    <div class="primavera"><img src="./IMG/laboratorio.webp" alt=""></div>
                     <p>La ultima prueba de Joel, aquella donde debe demostrar que es lo que quiere, salvar a la humanidad o a si mismo.</p>
                 </div>
                 <div>
@@ -128,7 +150,7 @@
                         <h3>Cap 12: Jackson</h3>
                         <p class="p">Primavera</p>
                     </div>
-                    <div><img src="./IMG/Cap12.webp" alt=""></div>
+                    <div class="primavera"><img src="./IMG/jackson.webp" alt=""></div>
                     <p>Cuando sabes que tu unico hogar es aquel donde esta la familia, no dudas en ir para así poder empezar de nuevo.</p>
                 </div>
             </div>
@@ -139,6 +161,17 @@
             <p>Han pasado cinco años desde que Ellie & Joel, llegaban a Jackson (Wyoming), la ciudad dirigida por María y el hermano de Joel, Tommy. En ella han encontrado paz y estabilidad, a pesar de los encuentros con los infectados y otros humanos indeseables.
                 
             Unos sucesos inesperados sucumbirán en esa paz, provocando que Ellie se embarque en una cruzada buscando justicia. Será un viaje sin retorno, donde las devastadoras consecuencias físicas y emocionales que conllevan sus actos, serán fruto de la violencia propiciada al intentar acabar con cada uno de los responsables.</p>
+        </section>
+        <section id="capitulos2">
+            <h2>CAPITULOS PARTE II</h2>
+            <div class="capitulos21">
+                <div>
+                    <h3>Cap 1: El Parque</h3>
+                    <p>Primavera</p>
+                </div>
+                <div class="primavera"><img src="./IMG/JACKSON2.webp" alt=""></div>
+                <p></p>
+            </div>
         </section>
 
     </main>

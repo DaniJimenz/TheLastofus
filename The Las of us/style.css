@@ -23,47 +23,6 @@ body{
     background-color: black;
 }
 
-/*Header*/
-
-header{
-    display: flex;
-    align-items: center;
-    background-color: black;
-    justify-content: space-around;
-    width: 70%;
-    margin: auto;
-    height: 14vh;
-    padding: 1%;
-    border-bottom: 3px solid #8b0000;
-}
-.luz{
-    width: 4%;
-}
-.logo img{
-    height: 128px;
-    width: auto;
-}
-
-nav{
-    width: 50%;
-}
-
-nav ul{
-    justify-content: space-around;
-    list-style: none;
-    display: flex;
-    font-size: 30px;
-}
-
-nav a{
-    color: #eaeaea;
-    text-decoration: none;
-    font-weight: normal;  /*Grosor de un texto*/
-}
-nav a:hover{
-    color: #8b0000;
-}
-
 /*Main*/
 
 #banner{
@@ -73,7 +32,7 @@ nav a:hover{
     display: flex;
     align-items: center;
     background-position: center center;
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
@@ -99,7 +58,7 @@ footer{
     font-family: 'Press Gothic';
     text-align: center;
     border-top: 3px solid #8b0000;
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 .contenidofooter{
@@ -160,7 +119,7 @@ footer{
 #personajes{
     background-color: black;
     padding: 50px 20px;
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
@@ -206,7 +165,7 @@ footer{
     color: #eaeaea;
     padding: 50px 20px;
     margin: auto;
-    width: 70%;
+    width: 80%;
 }
 
 .fases {
@@ -281,7 +240,7 @@ footer{
 #secundarios{
     padding: 50px 20px;
     background-color: black;
-    width: 70%;
+    width: 80%;
     margin: auto;
     color: #eaeaea;
     font-family: 'Oswald';
@@ -302,7 +261,7 @@ footer{
     background-color: black;
     padding: 50px 40px;
     font-family: 'Oswald';
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
@@ -330,14 +289,14 @@ footer{
     color: #eaeaea;
     padding: 50px 40px;
     margin: auto;
-    width: 70%;
+    width: 80%;
 }
 #capitulos h2{
     margin-bottom: 15px;
     color: grey;
 }
 #capitulos h3{
-    color: grey;
+    color: white;
     margin-right: 1vw;
 }
 .caps1{
@@ -347,14 +306,20 @@ footer{
     margin-bottom: 30px;
 }
 
-#capitulos img{
-    border-radius: 10px;
-    transition: 1s;
-    border: 2px solid grey;
-}
-#capitulos img:hover{
+
+#capitulos .otoño:hover{
     transform: scale(0.9);
 }
+#capitulos .verano:hover{
+    transform: scale(0.9);
+}
+#capitulos .primavera:hover{
+    transform: scale(0.9);
+}
+#capitulos .invierno:hover{
+    transform: scale(0.9);
+}
+
 
 .caps1>div{
     width: 24%;
@@ -383,17 +348,25 @@ footer{
     width: 24%;
 }
 
-.o{
-    color:#804000;
+#capitulos .otoño{
+    border: 2px solid #b96e57;
+    transition: 1s;
+    border-radius: 9px;
 }
-.v{
-    color:#ff9f1a;
+#capitulos .verano{
+    border: 2px solid #f9c54e;
+    transition: 1s;
+    border-radius: 9px;
 }
-.i{
-    color:#b3cfe6;
+#capitulos .primavera{
+    border: 2px solid #dbde83;
+    transition: 1s;
+    border-radius: 9px;
 }
-.p{
-    color:#e1cc4f; 
+#capitulos .invierno{
+    border: 2px solid #1a8ca2;
+    transition: 1s;
+    border-radius: 9px;
 }
 
 .caps1>div>div:nth-child(1){
@@ -419,7 +392,7 @@ footer{
     padding: 50px 40px;
     font-family: 'Oswald';
     margin: auto;
-    width: 70%;
+    width: 80%;
 }
 
 #historia2 h2{
@@ -437,7 +410,7 @@ footer{
 /*Análisis*/
 
 #analisis{
-   width: 70%;
+   width: 80%;
    margin: auto;
    background-color: black;
    margin-top: 40px;
@@ -501,3 +474,194 @@ h2{
     width: 49%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Header Fran*/
+
+body{
+    overflow-x: hidden;
+}
+header{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    border-bottom: 3px solid #8b0000;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+.nav {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__toggle {
+    display: none;
+    max-width: 45px;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+.menu__item {
+    display: inline-block;
+    transition: 0.2s ease;
+}
+
+.menu__item a {
+    color: #eaeaea;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.menu__item a:hover {
+    transition: 0.2s ease;
+    color: #8b0000;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .nav {
+        transition: 0.3s ease;
+    }
+
+    .nav.display {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        display: block;
+        background: black;
+    }
+    
+    .nav__logo {
+        display: inline-block;
+        padding: 30px;
+        align-self: center;
+    }
+
+    .nav__toggle {
+        display: block;
+        width: 35px;
+        margin: 7%;
+        float: right;
+        cursor: pointer;
+        transition: 0.3 ease;
+    }
+
+    .nav__toggle:hover {
+        color: #ddd;
+        transition: 0.3s ease;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu__item {
+        opacity: 0;
+        text-align: left;
+        padding: 20px;
+        margin: 0px;
+        transition: 0.3s ease;
+    }
+
+    .menu__item a {
+        display: block;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-size: 1.5rem;
+    }
+
+    .menu__item a:hover {
+        transition: 0.3s ease;
+        transform: translateX(5px);
+        color: #202020;
+    }
+
+    .menu__item.display {
+        display: block;
+        animation: showMenuItems 0.6s ease;
+        animation-fill-mode: both;
+    }
+
+    .menu__item.display:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    .menu__item.display:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .menu__item.display:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+    .escon{
+        display: none;
+        transition: 0;
+    }
+    .escon *{
+        display: none;
+    }
+    .menu-activador-linea {
+        height: 2px;
+        display: block;
+        background-color: white;
+        opacity: 1;
+        transform: translateY(0) rotate(0);
+        transition: all 0.3s;
+        margin-bottom: 10px;
+    }
+    .display .menu-activador-linea:nth-child(1) {
+        transform: translateY(12px) rotate(45deg);
+    }
+    
+    .display  .menu-activador-linea:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .display  .menu-activador-linea:nth-child(3) {
+        transform: translateY(-12px) rotate(-45deg);
+    }
+}
+
+@keyframes showMenuItems {
+    0% {
+        opacity: 0;
+        transform: translate3d(40px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
