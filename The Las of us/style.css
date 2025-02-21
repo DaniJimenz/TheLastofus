@@ -550,20 +550,196 @@ h2{
     width: 49%;
 }
 
-/*HBO*/
+/*Legado*/
 
-#hbo{
-    width: 80%;
+#remaster{
+    width: 70%;
     margin: auto;
     background-color: black;
     margin-top: 40px;
     font-family: 'Oswald';
     color: #eaeaea;
 }
- 
-h1{
-    color: grey;
+
+.rem1{
+    margin-top: 20px;
 }
+
+#remaster h1{
+    font-size: 2rem;
+}
+
+#remaster>div:nth-child(1){
+    background-image: url(./IMG/legado.jpg);
+    background-size: cover;
+    aspect-ratio: 2 / 1;
+    margin: auto;
+}
+
+.rem1>div:nth-child(4){
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.rem1>div:nth-child(4)>div:nth-child(1){
+    width: 80%;
+    background-image: url(./IMG/premios1.jpg_large);
+    aspect-ratio: 2 / 1;
+    background-size: cover;
+}
+
+.rem1>div:nth-child(4)>div:nth-child(2){
+    width: 80%;
+    background-image: url(./IMG/premios2.jpg);
+    aspect-ratio: 2 / 1;
+    background-size: cover;
+}
+
+.rem2 p{
+    margin-bottom: 20px;
+}
+
+.rem2>div{
+    background-image: url(./IMG/criticas.webp);
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 2/1;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/*Legado*/
+
+#legado{
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    font-family: 'Oswald';
+    color: #eaeaea;
+}
+
+#legado h1{
+    font-size: 2rem;
+}
+
+#legado>div:nth-child(1){
+    background-image: url(./IMG/remas2.avif);
+    background-size: cover;
+    aspect-ratio: 2 / 1;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.leg1 p{
+    margin-bottom: 15px;
+}
+
+.leg1>div:nth-child(7){
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.leg1>div:nth-child(7)>div:nth-child(1){
+    width: 50%;
+    background-image: url(./IMG/puñalá.webp);
+    aspect-ratio: 2 / 1;
+    background-size: cover;
+}
+
+.leg1>div:nth-child(7)>div:nth-child(2){
+    width: 50%;
+    background-image: url(./IMG/caballo.webp);
+    aspect-ratio: 2 / 1;
+    background-size: cover;
+}
+
+/*HBO*/
+
+#hbo{
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    font-family: 'Oswald';
+    color: #eaeaea;
+}
+
+#hbo h1{
+    font-size: 2rem;
+}
+
+#hbo>div:nth-child(1){
+    background-image: url(./IMG/hbo.jpg);
+    background-size: cover;
+    aspect-ratio: 2 / 1;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.hbo2{
+    margin-top: 20px;
+}
+
+.hbo2 p{
+    margin-bottom: 10px;
+}
+
+.hbo2>div:nth-child(5)>div:nth-child(1){
+    background-image: url(./IMG/cartel33.jpg);
+    background-size: cover;
+    width: 33%;
+    aspect-ratio: 2 / 3;
+    margin: auto;
+    position: center center;
+}
+
+.hbo2>div:nth-child(5)>div:nth-child(2){
+    background-image: url(./IMG/cartel22.jpg);
+    background-size: cover;
+    width: 33%;
+    aspect-ratio: 2 / 3;
+    margin: auto;
+    position: center center;
+}
+
+.hbo2>div:nth-child(5)>div:nth-child(3){
+    background-image: url(./IMG/cartel3.jpg);
+    background-size: cover;
+    width: 33%;
+    aspect-ratio: 2 / 3;
+    margin: auto;
+    position: center center;
+}
+
+.hbo2>div:nth-child(5)>div:nth-child(3):hover{
+    transform: scale(0.9);
+}
+
+.hbo2>div:nth-child(5)>div:nth-child(1):hover{
+    transform: scale(0.9);
+}
+
+.hbo2>div:nth-child(5)>div:nth-child(2):hover{
+    transform: scale(0.9);
+}
+
+
+.hbo2>div:nth-child(5){
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 6px;
+}
+
+
 
 /*Noticias*/
 
