@@ -43,10 +43,12 @@ body{
 }
 
 .juntos{
-    width: 510px;
+    width: 50vh;
+    height: 100%;
     display: flex;
-    margin: 70px;
+    margin: 5%;
     justify-content: flex-start;
+    align-items: end;
 }
 
 /*Footer*/
@@ -749,6 +751,7 @@ h2{
     font-family: 'Oswald';
     margin: auto;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -761,7 +764,7 @@ h2{
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 49%;
+    width: 48%;
 }  
 
 .tarjetaimg {
@@ -844,6 +847,7 @@ header{
     width: 80%;
     margin: auto;
     padding: 10px;
+    z-index: 99;
 }
 
 .nav {
@@ -887,7 +891,9 @@ header{
     .nav {
         transition: 0.3s ease;
     }
-
+    header{
+        width: 100%;
+    }
     .nav.display {
         width: 100vw;
         height: 100vh;
@@ -1001,3 +1007,113 @@ header{
         transform: translate3d(0, 0, 0);
     }
 }
+
+
+/*Responsive*/
+
+@media screen and (max-width:1328px){
+    /*capitulos*/
+    #capitulos>div{
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    #capitulos>div>div{
+        width: 49%;
+        margin-bottom: 20px;
+    }
+
+    #capitulos2>div{
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        justify-content: space-between;
+    }
+    #capitulos2>div>div{
+        width: 49%;
+        margin-bottom: 20px;
+    }
+
+    /*Historia*/
+
+    .hbo2>div:nth-child(5)>div:nth-child(3),
+    .hbo2>div:nth-child(5)>div:nth-child(2),
+    .hbo2>div:nth-child(5)>div:nth-child(1){
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 937px) {
+    .tarjeta{
+        width: 45%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .viaje2>div:nth-child(3) {
+        flex-wrap: wrap;
+    }
+    .viaje2>div:nth-child(3)>div {
+        width: 48%;
+    }
+
+    .viaje3>div:nth-child(3) {
+        flex-wrap: wrap;
+    }
+    .viaje3>div:nth-child(3)>div {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #banner {
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    .bottomfooter {
+        width: 80%;
+        justify-content: center;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+
+@media screen and (max-width: 700px) {
+    #capitulos>div>div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #capitulos2>div>div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .conteiner > div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #personajes .img {
+        width: 55%;
+        margin: auto;
+    }
+
+    .tarjeta{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav__logo {
+        width: 50%;
+    }
+}
+
+
