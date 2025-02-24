@@ -213,6 +213,8 @@ footer{
     font-family: 'Oswald';
     border-radius: 5px;
     background-color: black;
+    overflow: scroll;
+    height: 6vh ;
 }
 
 .fases img{
