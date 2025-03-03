@@ -212,9 +212,9 @@ footer{
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Oswald';
-    background-color: grey;
+    background-color: #8b0000;
 }
 #personajes{
     background-color: black;
@@ -258,6 +258,73 @@ footer{
     font-family: 'Oswald';
 }
 
+/*Secundarios*/
+
+#secundarios {
+    padding: 50px 20px;
+    background-color: black;
+    width: 80%;
+    margin: auto;
+    color: #eaeaea;
+    font-family: 'Oswald';
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#secundarios h2 {
+    color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+    background-color: #8b0000;
+}
+
+.secun {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.personaje {
+    background: #3a3a3a;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.personaje:hover {
+    transform: scale(1.05);
+}
+
+.personaje img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    border: 4px solid grey;
+}
+
+.personaje h3 {
+    color: #ffffff;
+    margin: 20px 0 15px;
+    font-size: 1.8em;
+}
+
+.personaje p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #eaeaea;
+}
+
 /*Infectados*/
 
 #infectados{
@@ -286,19 +353,18 @@ footer{
 .div6 { grid-area: 2 / 3 / 3 / 4; }
 
 .fases>div{
-    height: 23vw;
-    background-color: #2d572c;
+    height: auto;
+    background-color: grey;
     border-radius: 10px;
-    border: 3px solid #2d572c;
+    border: 3px solid grey;
 }
 
 #infectados h2{
     color:#eaeaea;
     font-family: 'Oswald';
     text-align: center;
-    padding: 10px;
-    background-color: #2d572c;
-    border-radius: 5px;
+    font-size: 25px;
+    background-color: #8b0000;
 }
 
 .fases h3{
@@ -316,43 +382,6 @@ footer{
 .fases img{
     border-radius: 5px;
     height: 15vw;
-}
-
-.audio{
-    display: flex;
-    justify-content: center;
-    margin-top: 6px;
-}
-
-/*Secundarios*/
-
-#secundarios h2{
-    color: #eaeaea;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-    font-size: 30px;
-    font-family: 'Oswald';
-    background-color:#A52A2A;
-    border-radius: 5px;
-}
-
-#secundarios{
-    padding: 50px 20px;
-    background-color: black;
-    width: 80%;
-    margin: auto;
-    color: #eaeaea;
-    font-family: 'Oswald';
-}
-
-.secun>div{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.secun>div>div{
-    width: 24%;
 }
 
 /*Historia*/
@@ -579,10 +608,6 @@ footer{
     transform: scale(0.9);
 }
 
-
-
-
-
 /*Análisis*/
 
 #analisis{
@@ -792,7 +817,7 @@ input:focus, textarea:focus{
 /*Grabaciones*/
 
 #grabaciones{
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-top: 40px;
     font-family: 'Oswald';
@@ -819,31 +844,56 @@ input:focus, textarea:focus{
     margin-bottom: 15px;
 }
 
-.hbo2>div:nth-child(5)>div:nth-child(1){
-    background-image: url(./IMG/cartel33.jpg);
-    background-size: cover;
-    width: 33%;
-    aspect-ratio: 2 / 3;
-    margin: auto;
-    position: center center;
+.directores {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
 }
 
-.hbo2>div:nth-child(5)>div:nth-child(2){
-    background-image: url(./IMG/cartel22.jpg);
-    background-size: cover;
-    width: 33%;
-    aspect-ratio: 2 / 3;
-    margin: auto;
-    position: center center;
+.directores li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
 }
 
-.hbo2>div:nth-child(5)>div:nth-child(3){
-    background-image: url(./IMG/cartel3.jpg);
-    background-size: cover;
-    width: 33%;
-    aspect-ratio: 2 / 3;
-    margin: auto;
-    position: center center;
+.imagen-conte {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    gap: 25px;
+}
+
+.imagen-conte img {
+    width: 49%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.caption {
+    font-size: 0.9rem;
+    font-style: 'Oswald';
+    margin-top: 5px;
+}
+
+.suscribete {
+    display: block;
+    width: fit-content;
+    background: grey;
+    color: #eaeaea;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    transition: 0.3s;
+}
+
+.suscribete:hover {
+    background: #8b0000;
 }
 
 /*HBO*/
@@ -997,25 +1047,6 @@ input:focus, textarea:focus{
 .tarjetaconte a:hover {
     text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Header Fran*/
 
@@ -1224,12 +1255,48 @@ header{
     }
 }
 
+
+@media (max-width: 1024px) {
+    .secun {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .fases {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+    #grabaciones {
+        width: 80%;
+    }
+
+    .imagen-conte img {
+        width: 48%;
+    }
+}
+
+
+@media (max-width: 1020px) {
+    .fases {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+    .fases {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 1 / 3 / 2; }
+    .div4 { grid-area: 2 / 2 / 3 / 3; }
+    .div5 { grid-area: 3 / 1 / 4 / 2; }
+    .div6 { grid-area: 3 / 2 / 4 / 3; }
+}
+
 @media screen and (max-width: 937px) {
     .tarjeta{
         width: 45%;
     }
 }
-
 
 @media screen and (max-width: 800px) {
     .viaje2>div:nth-child(3) {
@@ -1259,10 +1326,13 @@ header{
         justify-content: center;
         margin: auto;
     }
-}
+    #grabaciones h1, #grabaciones h2 {
+        font-size: 1.5rem;
+    }
 
-@media screen and (max-width: 768px) {
-    
+    .imagen-conte img {
+        width: 100%;
+    }
 }
 
 
@@ -1290,6 +1360,34 @@ header{
 
     .tarjeta{
         width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .secun {
+      grid-template-columns: 1fr;
+    }
+  
+    .personaje {
+      max-width: 100%;
+    }
+  
+    .personaje img {
+      height: auto;
+    }
+
+    .fases {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+
+    .fases > div {
+        grid-area: unset;
+    }
+
+    .fases img {
+        width: 100%;
+        height: auto;
     }
 }
 
