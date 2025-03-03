@@ -1225,6 +1225,7 @@ header{
 
 /*Responsive*/
 
+
 @media screen and (max-width:1328px){
     /*capitulos*/
     #capitulos>div{
@@ -1245,15 +1246,24 @@ header{
         width: 49%;
         margin-bottom: 20px;
     }
+    #grabaciones {
+        width: 80%;
+    }
 
-    /*Historia*/
+    .imagen-conte img {
+        width: 48%;
+    }
+}
+
+
+/*Historia*/
 
     .hbo2>div:nth-child(5)>div:nth-child(3),
     .hbo2>div:nth-child(5)>div:nth-child(2),
     .hbo2>div:nth-child(5)>div:nth-child(1){
         width: 32%;
-    }
 }
+
 
 
 @media (max-width: 1024px) {
