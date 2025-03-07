@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    font-family: 'Space Mono';
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+
+#banner{
+    background: url(./img/tpm_tp-website_bg-image_3840x2160.jpg);
+    align-items: center;
+    display: flex;
+    background-size: cover;
+    height: 100vh;
+}
+
+#banner>div{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-size: 4rem;
+}
+
+#banner>div>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3%;
+}
+
+#banner a{
+    width: 40%;
+    height: 4vh;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#banner a:nth-child(1){
+    background-color: orange;
+}
+
+#banner a:nth-child(2){
+    background-color: white;  
+}
+
+#trailers{
+    background-color: bisque;
+    padding: 10vh 0;
+    margin-top:  5px;
+}
+
+#trailers>div{
+    text-align: center;
+}
+
+#trailers h2{
+    margin-bottom: 4vh;
+    font-size: 2rem;
+}
+
+#trailers article{
+    width: 28%;
+}
+
+#trailers>div>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#trailers article>div{
+    margin-bottom: 1vh;
+}
+
+#trailers h3{
+    color: blue;
+}
+
+#museos>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px
+}
+
+#museos{
+    padding: 10vh 0;
+    background-color: #75c9e7;
+}
+
+.caja1 {
+    width: 45%;
+    background-color: white;
+    border-radius: 15px;
+    
+}
+
+.caja2 {
+    width: 45%;
+    background-color: #dbf0d1;
+    border-radius: 15px;
+}
+
+#museos h2{
+    font-size: 2rem;
+    margin-bottom: 4%;
+}
+
+#museos .container{
+    display: flex;
+    align-items: center;
+}
+
+.foto1{
+    background-image: url(./img/5_entrance_ps.jpg);
+    width: 45%;
+}
+.foto2{
+    background-image: url(./img/4_playerview_ps.jpg);
+    width: 45%;
+}
+
+@media screen and (max-width: 872px ){
+    h1{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 780px) {
+   #banner a{
+    
+   }
+}
+@media screen and (max-width: 656px ){
+    h1{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 610px ){
+    #trailers>div>div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
